@@ -20,12 +20,16 @@ def draw():
     
     fill(0,255,0)
     text("MK",195,230)
-    
-    if hex(get(mouseX,mouseY)) == ('FFFFE14A'):
+    if hex(get(mouseX,mouseY)) == 'FF00FFFF':
         fill(255,0,255)
+        text("MK",195,230) # żeby był w wybranym koleore trzeba napisać go ponownie, gdy aktywny jest ten kolor
     else:
         fill(0,0,0)
+        text("MK",195,230)
         
     if keyPressed:
         if key == 'm' or key == 'k' or key == 'M' or key == 'K' :
             fill(255,0,255)
+            text("MK",195,230)
+
+#1,25pkt
